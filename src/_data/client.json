@@ -1,15 +1,15 @@
 {
-  "name": "Bright & Brown Solutions LLC",
-  "email": "ralphbrown959@gmail.com",
-  "phone": "616-381-6077",
-  "phoneFormatted": "(616)-381-6077",
+  "name": "The Black Law Team",
+  "email": "info@theblacklawteam.com",
+  "phone": "555-LAW-TEAM",
+  "phoneFormatted": "(555) LAW-TEAM",
   "address": {
-    "lineOne": "First Address Line",
-    "lineTwo": "Second Address Line, If Needed",
-    "city": "Grand Rapids",
-    "county": "MI",
-    "postcode": "49503",
-    "mapLink": "https://maps.app.goo.gl/8GXT7DGJEfpPfdjm9"
+    "lineOne": "Professional Law Office",
+    "lineTwo": "Legal Services Building",
+    "city": "Downtown",
+    "county": "Legal District",
+    "postcode": "12345",
+    "mapLink": "https://maps.app.goo.gl/4dJr5opfe3LLbqv48"
   },
-  "domain": "www.brightandbrownsolutions.com"
+  "domain": "www.theblacklawteam.com"
 }
