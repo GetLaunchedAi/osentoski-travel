@@ -1,15 +1,20 @@
 {
-  "name": "The Black Law Team",
-  "email": "info@theblacklawteam.com",
-  "phone": "555-LAW-TEAM",
-  "phoneFormatted": "(555) LAW-TEAM",
+  "name": "Miracle Carpet Care",
+  "email": "info@miraclecarpetcare.biz",
+  "phone": "248-721-6136",
+  "phoneFormatted": "(248) 721-6136",
   "address": {
-    "lineOne": "Professional Law Office",
-    "lineTwo": "Legal Services Building",
-    "city": "Downtown",
-    "county": "Legal District",
-    "postcode": "12345",
-    "mapLink": "https://maps.app.goo.gl/4dJr5opfe3LLbqv48"
+    "lineOne": "33228 West Twelve Mile, Suite 210",
+    "lineTwo": "Farmington Hills, MI 48334",
+    "city": "Farmington Hills",
+    "county": "Oakland County",
+    "postcode": "48334",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=33228+West+Twelve+Mile+Suite+210+Farmington+Hills+MI+48334"
   },
-  "domain": "www.theblacklawteam.com"
+  "domain": "www.miraclecarpetcare.biz",
+  "businessHours": {
+    "weekdays": "Mon - Sat: 8:00AM-6:00PM",
+    "weekend": "Sun: Closed"
+  },
+  "serviceAreas": "Farmington Hills, Novi, and throughout southeastern Michigan including Oakland, Wayne, Macomb County and surrounding areas"
 }

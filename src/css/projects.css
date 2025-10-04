@@ -1,204 +1,226 @@
 /*-- -------------------------- -->
-<---          Gallery           -->
+<---       Projects Page        -->
 <--- -------------------------- -*/
-/* Mobile - 360px - Contains hover animation */
+
+/* Mobile - 360px */
 @media only screen and (min-width: 0em) {
-  #gallery {
-    /* Centers button */
+  #hero-projects {
+    padding: 120px 0 80px;
     text-align: center;
-    padding: var(--sectionPadding);
+    max-width: 776.47px !important;
+    margin: 0 auto;
+  }
+
+  #hero-projects .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
     position: relative;
-    /* Prevents overflow from the image going off screen */
+  }
+  
+  body.dark-mode #hero-projects .cs-title {
+    color: var(--bodyTextColorWhite);
+  }
+
+  #projects-gallery {
+    padding: 0 0 80px 0;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .project-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+  }
+
+  body.dark-mode .project-card {
+    background: var(--medium);
+  }
+
+  .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  .project-image {
+    position: relative;
+    width: 100%;
+    height: 300px;
     overflow: hidden;
   }
-  #gallery .cs-container {
+
+  .project-image img {
     width: 100%;
-    max-width: 82.625em;
-    margin: auto;
-  }
-  #gallery .cs-image-group {
-    /* used rem so it doesn't scale with the font size of on parent */
-    font-size: min(1.1vw, 1em);
-    width: 100%;
-    max-width: 82.625em;
-    padding: 0;
-    margin: 0 auto 3.75rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1.875em;
-  }
-  #gallery .cs-row {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1.875em;
-  }
-  #gallery .cs-picture {
-    position: relative;
-    display: block;
-  }
-  #gallery .cs-picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
     height: 100%;
-    width: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease;
   }
-  #gallery .cs-row-1 .cs-picture-1 {
-    width: 26.25em;
-    height: 35.4375em;
+
+  .project-card:hover .project-image img {
+    transform: scale(1.05);
   }
-  #gallery .cs-row-1 .cs-picture-2 {
-    width: 26.25em;
-    height: 39.3125em;
-  }
-  #gallery .cs-row-1 .cs-picture-3 {
-    width: 26.25em;
-    height: 32em;
-  }
-  #gallery .cs-row-2 .cs-picture-1 {
-    width: 26.25em;
-    height: 30.75em;
-  }
-  #gallery .cs-row-2 .cs-picture-2 {
-    width: 26.25em;
-    height: 32.3125em;
-  }
-  #gallery .cs-row-2 .cs-picture-3 {
-    width: 26.25em;
-    height: 39.3125em;
-  }
-  #gallery .cs-row-3 .cs-picture-1 {
-    width: 26.25em;
-    height: 39.0625em;
-  }
-  #gallery .cs-row-3 .cs-picture-2 {
-    width: 26.25em;
-    height: 28.25em;
-  }
-  #gallery .cs-row-3 .cs-picture-3 {
-    width: 26.25em;
-    height: 39.3125em;
-  }
-}
-/*-- -------------------------- -->
-<---    Final Call To Action    -->
-<--- -------------------------- -*/
-/* Mobile */
-@media only screen and (min-width: 0em) {
-  #cta {
-    position: relative;
-    padding: 3.125rem 0;
-  }
-  #cta:before {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    background: #000;
-    opacity: .7;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  #cta .container {
-    text-align: center;
-  }
-  #cta picture {
+
+  .project-overlay {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -2;
-  }
-  #cta picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-  #cta .title {
-    font-weight: 900;
-    font-size: min(9vw, 3rem);
-    line-height: 1.20833333;
-    color: #fff;
-    position: relative;
-    margin-bottom: 2.25rem;
-    text-align: center;
-  }
-  #cta p {
-    color: #fff;
-    text-align: center;
-    opacity: 1;
-    margin: auto;
-    margin-bottom: 2.25rem;
-    width: 96%;
-    max-width: 37.375rem;
-  }
-}
-/* Small Desktop */
-@media only screen and (min-width: 64em) {
-  #cta {
-    padding: 10.5rem 0;
-  }
-}
-/* Large Desktop */
-@media only screen and (min-width: 1300px) {
-  #cta {
-    position: relative;
-    margin-top: 6.25rem;
-  }
-  #cta:before {
-    display: none;
-  }
-  #cta:after {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 69.25rem;
-    width: 125rem;
-    background: url("/assets/svgs/cta-squares.svg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 1;
+    right: 0;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -3;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
   }
-  #cta .container {
-    width: 90.0625%;
-    margin: auto;
+
+  .project-card:hover .project-overlay {
+    opacity: 1;
   }
-  #cta picture {
-    width: 90.0625%;
-    left: 50%;
-    transform: translateX(-50%);
+
+  .project-info h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   }
-  #cta picture:before {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    background: #000;
-    opacity: .7;
-    top: 0;
-    left: 0;
-    z-index: 1;
+
+  .project-info p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    margin: 0 0 8px 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .project-location {
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+
+  #cta-projects {
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  }
+
+  body.dark-mode #cta-projects {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--dark) 100%);
+  }
+
+  #cta-projects .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+  }
+
+  body.dark-mode #cta-projects .cs-title {
+    color: var(--bodyTextColorWhite);
+  }
+
+  .cs-button-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  .button-transparent {
+    display: inline-block;
+    padding: 12px 24px;
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .button-transparent:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-2px);
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #cta:after {
-    display: none;
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48em) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-image {
+    height: 350px;
+  }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64em) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .project-image {
+    height: 300px;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project-image {
+    height: 250px;
+  }
+
+  .cs-button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-transparent {
+    width: 200px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-overlay {
+    padding: 15px;
+  }
+
+  .project-info h3 {
+    font-size: 20px;
+  }
+
+  .project-info p {
+    font-size: 14px;
   }
 }

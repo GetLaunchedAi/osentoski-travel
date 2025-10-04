@@ -9,6 +9,35 @@ const contact = document.querySelector('#Contact')
 
 const screenWidth = window.screen.width;
 
+//
+//    Handle Scroll Events for Logo Display
+//
+function handleScroll() {
+    const scrollY = window.scrollY;
+    const body = document.body;
+    const isDarkMode = body.classList.contains('dark-mode');
+    
+    // When scrollY is 0 and in light mode, show dark logo
+    if (scrollY === 0 && !isDarkMode) {
+        body.classList.add('show-dark-logo');
+    } else {
+        body.classList.remove('show-dark-logo');
+    }
+    
+    // Handle scroll class for navigation background
+    if (scrollY > 0) {
+        body.classList.add('scroll');
+    } else {
+        body.classList.remove('scroll');
+    }
+}
+
+// Add scroll event listener
+window.addEventListener('scroll', handleScroll);
+
+// Call on page load to handle initial state
+handleScroll();
+
 
 
 hamburgerMenu.addEventListener('click', function () {
