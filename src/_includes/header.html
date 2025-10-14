@@ -14,11 +14,11 @@
         <!--Logo - Get SVGs if you can.  I use fiverr to get png's turned into SVGs. Highly recommend it, worth the $20 - get a light and dark version-->
         <a class="logo" aria-label="click to go to home page" href="/">
             <!--Light Colored Logo, remove .dark image tag and the .light class if you don't have a dark and light version -->
-            <img class="light" aria-hidden="true" src="/assets/images/logo_light.png" decoding="async" alt="logo">
+            <!-- <img class="light" aria-hidden="true" src="/assets/images/logo_light.png" decoding="async" alt="logo"> -->
 
             <!--Dark Colored Logo-->
-            <img class="dark" aria-hidden="true" src="/assets/images/logo_dark.png" decoding="async" loading="lazy" alt="logo">
-
+            <!-- <img class="dark" aria-hidden="true" src="/assets/images/logo_dark.png" decoding="async" loading="lazy" alt="logo"> -->
+<span>LOGO HERE</span>
         </a>
 
         <!--Mobile Nav toggle-->
@@ -37,13 +37,10 @@
                         {{ entry.title }}
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-menu-link" href="/carpet-cleaning/">Carpet Cleaning</a></li>
-                        <li><a class="dropdown-menu-link" href="/furniture-cleaning/">Furniture Cleaning</a></li>
-                        <li><a class="dropdown-menu-link" href="/tile-grout-cleaning/">Tile & Grout Cleaning</a></li>
-                        <li><a class="dropdown-menu-link" href="/water-damage/">Water Damage</a></li>
-                        <li><a class="dropdown-menu-link" href="/wood-floor-cleaning/">Wood Floor Cleaning</a></li>
-                        <li><a class="dropdown-menu-link" href="/residential-cleaning/">Residential Cleaning</a></li>
-                        <li><a class="dropdown-menu-link" href="/commercial-cleaning/">Commercial Cleaning</a></li>
+                        <li><a class="dropdown-menu-link" href="/school-groups/">School Group Trips</a></li>
+                        <li><a class="dropdown-menu-link" href="/family-vacations/">Family Vacations</a></li>
+                        <li><a class="dropdown-menu-link" href="/custom-adventures/">Custom Adventures</a></li>
+                        <li><a class="dropdown-menu-link" href="/become-a-travel-advisor/">Become a Travel Advisor</a></li>
                     </ul>
                     {% else %}
                     <a {% if entry.url==page.url %} class="active" {% endif %} href="{{ entry.url }}">

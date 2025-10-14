@@ -1,20 +1,20 @@
 {
-  "name": "Miracle Carpet Care",
-  "email": "info@miraclecarpetcare.biz",
-  "phone": "248-721-6136",
-  "phoneFormatted": "(248) 721-6136",
+  "name": "Osentoski Travel",
+  "email": "Samanthalda12@gmail.com",
+  "phone": "989-975-0204",
+  "phoneFormatted": "(989) 975-0204",
   "address": {
-    "lineOne": "33228 West Twelve Mile, Suite 210",
-    "lineTwo": "Farmington Hills, MI 48334",
-    "city": "Farmington Hills",
-    "county": "Oakland County",
-    "postcode": "48334",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=33228+West+Twelve+Mile+Suite+210+Farmington+Hills+MI+48334"
+    "lineOne": "",
+    "lineTwo": "",
+    "city": "",
+    "county": "",
+    "postcode": "",
+    "mapLink": ""
   },
-  "domain": "www.miraclecarpetcare.biz",
+  "domain": "Samantha Osentoski",
   "businessHours": {
-    "weekdays": "Mon - Sat: 8:00AM-6:00PM",
-    "weekend": "Sun: Closed"
+    "weekdays": "",
+    "weekend": ""
   },
-  "serviceAreas": "Farmington Hills, Novi, and throughout southeastern Michigan including Oakland, Wayne, Macomb County and surrounding areas"
+  "serviceAreas": "School group travel planning and family vacations"
 }
