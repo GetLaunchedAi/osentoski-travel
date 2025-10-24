@@ -655,6 +655,235 @@
 }
 
 /*-- -------------------------- -->
+<---      Featured Adventures    -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #featured-adventures-1329 {
+    padding: var(--sectionPadding);
+    position: relative;
+  }
+
+  #featured-adventures-1329 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+
+  #featured-adventures-1329 .cs-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  #featured-adventures-1329 .cs-title {
+    max-width: 20ch;
+  }
+
+  #featured-adventures-1329 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: clamp(1rem, 2.5vw, 1.25rem);
+  }
+
+  #featured-adventures-1329 .cs-item {
+    list-style: none;
+    width: 100%;
+    height: clamp(20rem, 55vw, 30rem);
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    text-align: left;
+    box-shadow: 0px 12px 80px 0px rgba(26, 26, 26, 0.08);
+    grid-column: span 12;
+    z-index: 1;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  #featured-adventures-1329 .cs-item:hover .cs-picture img {
+    transform: scale(1.2);
+  }
+
+  #featured-adventures-1329 .cs-item:hover .cs-picture:after {
+    opacity: 1;
+  }
+
+  #featured-adventures-1329 .cs-item:hover .cs-h3 {
+    color: var(--primary);
+  }
+
+  #featured-adventures-1329 .cs-item:hover .cs-number {
+    opacity: 1;
+    top: clamp(1.25rem, 2.3vw, 2rem);
+  }
+
+  #featured-adventures-1329 .cs-link {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: clamp(1.25rem, 2.3vw, 2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+  }
+
+  #featured-adventures-1329 .cs-number {
+    font-size: clamp(1.5625rem, 2.7vw, 2.4375rem);
+    font-weight: bold;
+    color: var(--bodyTextColorWhite);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.4s ease-out, top 0.4s ease-out;
+  }
+
+  #featured-adventures-1329 .cs-h3 {
+    font-size: clamp(1.25rem, 1.8vw, 1.5625rem);
+    line-height: 1.2em;
+    font-weight: bold;
+    margin: 0 0 0.25rem 0;
+    color: var(--bodyTextColorWhite);
+    transition: color 0.3s;
+    text-align: inherit;
+  }
+
+  #featured-adventures-1329 .cs-item-text {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+    color: var(--bodyTextColorWhite);
+  }
+
+  #featured-adventures-1329 .cs-picture {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 1rem;
+  }
+
+  #featured-adventures-1329 .cs-picture:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(top, rgba(26, 26, 26, 0) 0%, rgba(0, 0, 0, 0.76) 100%);
+    background: -webkit-linear-gradient(top, rgba(26, 26, 26, 0) 0%, rgba(0, 0, 0, 0.76) 100%);
+    background: linear-gradient(to bottom, rgba(26, 26, 26, 0) 0%, rgba(0, 0, 0, 0.76) 100%);
+    opacity: 1;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1rem;
+  }
+
+  #featured-adventures-1329 .cs-picture:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(top, rgba(26, 26, 26, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%);
+    background: -webkit-linear-gradient(top, rgba(26, 26, 26, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%);
+    background: linear-gradient(to bottom, rgba(26, 26, 26, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%);
+    opacity: 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: opacity 0.3s;
+    border-radius: 1rem;
+  }
+
+  #featured-adventures-1329 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: transform 0.7s;
+    border-radius: 1rem;
+  }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #featured-adventures-1329 .cs-content {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    gap: 2.5rem;
+  }
+
+  #featured-adventures-1329 .cs-text {
+    width: 50%;
+  }
+
+  #featured-adventures-1329 .cs-title {
+    margin: 0;
+  }
+
+  #featured-adventures-1329 .cs-card-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+
+  #featured-adventures-1329 .cs-item {
+    flex: 1;
+    grid-column: span 4;
+  }
+}
+
+/* Desktop - 900px */
+@media only screen and (min-width: 56.25rem) {
+  #featured-adventures-1329 .cs-container {
+    max-width: 80rem;
+  }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #featured-adventures-1329 .cs-title,
+  body.dark-mode #featured-adventures-1329 .cs-text {
+    color: var(--bodyTextColorWhite);
+  }
+
+  body.dark-mode #featured-adventures-1329 .cs-text,
+  body.dark-mode #featured-adventures-1329 .cs-item-text {
+    opacity: 0.8;
+  }
+}
+
+/*-- -------------------------- -->
 <---          Reviews           -->
 <--- -------------------------- -*/
 
