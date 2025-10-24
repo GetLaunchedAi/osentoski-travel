@@ -31,24 +31,30 @@
         <nav id="navbar-menu" aria-label="main navigation">
             <ul>
                 {%- for entry in navPages %}
-                <li class="{% if entry.title == 'Services' %}dropdown{% endif %}" id="{{ entry.title }}">
-                    {% if entry.title == 'Services' %}
-                    <a class="dropdown-toggle" role="button" tabindex="0">
-                        {{ entry.title }}
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-menu-link" href="/school-groups/">School Group Trips</a></li>
-                        <li><a class="dropdown-menu-link" href="/family-vacations/">Family Vacations</a></li>
-                        <li><a class="dropdown-menu-link" href="/custom-adventures/">Custom Adventures</a></li>
-                        <li><a class="dropdown-menu-link" href="/become-a-travel-advisor/">Become a Travel Advisor</a></li>
-                    </ul>
-                    {% else %}
+                {%- if entry.title != 'Services' %}
+                <li id="{{ entry.title }}">
                     <a {% if entry.url==page.url %} class="active" {% endif %} href="{{ entry.url }}">
                         {{ entry.title }}
                     </a>
-                    {% endif %}
                 </li>
+                {%- endif %}
                 {%- endfor %}
+                <!-- Service Category Tabs -->
+                <li class="service-tab">
+                    <a {% if page.url == '/family-vacations/' %} class="active" {% endif %} href="/family-vacations/">
+                        Family Adventures
+                    </a>
+                </li>
+                <li class="service-tab">
+                    <a {% if page.url == '/school-groups/' %} class="active" {% endif %} href="/school-groups/">
+                        Beyond the Classroom School Trip
+                    </a>
+                </li>
+                <li class="service-tab">
+                    <a {% if page.url == '/become-a-travel-advisor/' %} class="active" {% endif %} href="/become-a-travel-advisor/">
+                        Want to Become a Travel Advisor
+                    </a>
+                </li>
             </ul>
         </nav>
 

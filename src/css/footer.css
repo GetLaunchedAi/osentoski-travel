@@ -175,8 +175,8 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    width: 96%;
-    max-width: 82.5rem;
+    /* width: 96%; */
+    max-width: 85rem;
     margin: auto;
     padding: 0;
   }

@@ -2,6 +2,91 @@
 <---         Navigation         -->
 <--- -------------------------- -*/
 
+/* Service Tab Styling */
+.service-tab {
+  position: relative;
+}
+
+.service-tab a {
+  background: linear-gradient(135deg, var(--primary), var(--primaryDark));
+  color: #fff !important;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  font-size: .75rem !important;
+}
+
+.service-tab a:hover {
+  background: linear-gradient(135deg, var(--primaryDark), var(--primary));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  border-color: var(--accent);
+}
+
+.service-tab a.active {
+  background: linear-gradient(135deg, var(--accent), var(--primary));
+  border-color: var(--primaryDark);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.service-tab a:before {
+  display: none !important;
+}
+
+/* Mobile Service Tab Styling */
+@media only screen and (max-width: 1023px) {
+  .service-tab a {
+    background: linear-gradient(135deg, var(--primary), var(--primaryDark));
+    color: #fff !important;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    /* margin: 0.5rem 0; */
+    display: block;
+    text-align: center;
+  }
+
+  .service-tab a:hover {
+    background: linear-gradient(135deg, var(--primaryDark), var(--primary));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    border-color: var(--accent);
+  }
+
+  .service-tab a.active {
+    background: linear-gradient(135deg, var(--accent), var(--primary));
+    border-color: var(--primaryDark);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Dark Mode Service Tab Styling */
+body.dark-mode .service-tab a {
+  background: linear-gradient(135deg, var(--accent), var(--primary));
+  color: #fff !important;
+  border-color: var(--primaryDark);
+}
+
+body.dark-mode .service-tab a:hover {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  border-color: var(--primary);
+}
+
+body.dark-mode .service-tab a.active {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  border-color: var(--accent);
+}
+
 /* Dropdown menu hidden by default */
 .dropdown-toggle {
   anchor-name: --dropdown;
@@ -348,7 +433,7 @@
 
   #navigation #navbar-menu.open {
     position: absolute;
-    height: 22.25rem;
+    height: 25rem;
     padding-top: 1.25rem;
     z-index: 9999;
   }
@@ -431,10 +516,12 @@
   }
 
   #navigation .container {
-    max-width: 80rem;
+    max-width: 85rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    height: 100%;
+    min-height: 5rem;
   }
 
   #navigation .logo {
@@ -442,6 +529,8 @@
     height: 6rem;
     width: auto;
     padding: 1rem 0;
+    display: flex;
+    align-items: center;
   }
 
   #navigation .logo img {
@@ -454,23 +543,29 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    height: 100%;
   }
 
   #navigation #navbar-menu ul li {
     list-style: none;
     margin-left: 1.875rem;
     padding-top: 0.1875rem;
+    display: flex;
+    align-items: center;
   }
 
   #navigation #navbar-menu ul li a {
     text-decoration: none;
     font-weight: bold;
-    font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+    /* font-size: clamp(0.875rem, 1.5vw, 1.125rem); */
+    font-size: 1rem;
     text-transform: uppercase;
     position: relative;
     z-index: 1;
     color: #fff;
     transition: color .3s;
+    display: flex;
+    align-items: center;
   }
 
   #navigation #navbar-menu ul li a:before {
@@ -526,6 +621,7 @@
     border-radius: 50%;
     transition: background-color 0.3s;
     margin-left: 1rem;
+    align-self: center;
   }
 
   #dark-mode-toggle:hover {
