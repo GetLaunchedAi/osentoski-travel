@@ -165,7 +165,7 @@ eleventyNavigation:
           Budget-conscious options without sacrificing experience
         </li>
       </ul>
-      <a href="/contact" class="cs-button-solid">Start Planning</a>
+      <a href="#cs-family-form-242" class="cs-button-solid">Start Planning</a>
     </div>
   </div>
 </section>
@@ -222,7 +222,7 @@ eleventyNavigation:
         <p class="cs-cta-p">
           Contact me today to discuss your family's interests, budget, and travel goals. I'll create a customized vacation that creates lasting memories for everyone.
         </p>
-        <a href="/contact" class="cs-button-solid">Contact Us Now</a>
+        <a href="#cs-family-form-242" class="cs-button-solid">Contact Us Now</a>
       </div>
     </div>
   </div>
@@ -236,4 +236,107 @@ eleventyNavigation:
       item.addEventListener('click', onClick)
     }
   </script>
+</section>
+
+<!-- ============================================ -->
+<!--              Family Vacation Form            -->
+<!-- ============================================ -->
+
+<section id="cs-family-form-242">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Get Started</span>
+      <h2 class="cs-title">Ready to Plan Your <span class="cs-color">Dream Family Vacation?</span></h2>
+      <p class="cs-text">
+        Tell us about your family and we'll create a stress-free vacation that creates lasting memories for everyone.
+      </p>
+    </div>
+    
+    <form id="cs-form-242" name="Contact Form" method="post" action="/contact">
+      <label class="cs-label">
+        Your Name
+        <input class="cs-input" type="text" id="name" name="name" placeholder="Your full name" required>
+      </label>
+      
+      <label class="cs-label">
+        Email Address
+        <input class="cs-input" type="email" id="email" name="email" placeholder="your.email@example.com" required>
+      </label>
+      
+      <label class="cs-label">
+        Phone Number
+        <input class="cs-input" type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+      </label>
+      
+      <label class="cs-label">
+        Family Size
+        <select class="cs-input" id="family-size" name="family-size" required>
+          <option value="">Select family size</option>
+          <option value="2">2 people</option>
+          <option value="3">3 people</option>
+          <option value="4">4 people</option>
+          <option value="5">5 people</option>
+          <option value="6">6 people</option>
+          <option value="7+">7+ people</option>
+        </select>
+      </label>
+      
+      <label class="cs-label">
+        Children's Ages
+        <input class="cs-input" type="text" id="children-ages" name="children-ages" placeholder="e.g., 8, 12, 15" required>
+      </label>
+      
+      <label class="cs-label">
+        Vacation Type
+        <select class="cs-input" id="vacation-type" name="vacation-type" required>
+          <option value="">Select vacation type</option>
+          <option value="theme-park">Theme Park Adventure</option>
+          <option value="beach">Beach Resort</option>
+          <option value="national-park">National Park Adventure</option>
+          <option value="city">City Exploration</option>
+          <option value="cruise">Cruise</option>
+          <option value="international">International Destination</option>
+          <option value="mixed">Mix of Activities</option>
+        </select>
+      </label>
+      
+      <label class="cs-label">
+        Preferred Timeline
+        <select class="cs-input" id="timeline" name="timeline" required>
+          <option value="">When would you like to travel?</option>
+          <option value="3-6-months">3-6 months</option>
+          <option value="6-12-months">6-12 months</option>
+          <option value="12-plus-months">12+ months</option>
+          <option value="flexible">Flexible timing</option>
+        </select>
+      </label>
+      
+      <label class="cs-label">
+        Budget Range
+        <select class="cs-input" id="budget" name="budget" required>
+          <option value="">Select budget range</option>
+          <option value="under-3k">Under $3,000</option>
+          <option value="3k-5k">$3,000 - $5,000</option>
+          <option value="5k-10k">$5,000 - $10,000</option>
+          <option value="10k-15k">$10,000 - $15,000</option>
+          <option value="15k-plus">$15,000+</option>
+          <option value="discuss">Prefer to discuss</option>
+        </select>
+      </label>
+      
+      <label class="cs-label cs-label-message">
+        Family Interests & Activities
+        <textarea class="cs-textarea" id="interests" name="interests" placeholder="What activities does your family enjoy? Any specific interests, hobbies, or experiences you'd like to include..."></textarea>
+      </label>
+      
+      <label class="cs-label cs-label-message">
+        Special Requirements & Notes
+        <textarea class="cs-textarea" id="requirements" name="requirements" placeholder="Any dietary restrictions, accessibility needs, special accommodations, or other important considerations for your family..."></textarea>
+      </label>
+      
+      <button class="cs-button-solid cs-submit" type="submit">
+        Start Planning My Family Vacation
+      </button>
+    </form>
+  </div>
 </section>

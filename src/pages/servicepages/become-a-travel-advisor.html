@@ -165,7 +165,7 @@ eleventyNavigation:
           Guidance to build residual income
         </li>
       </ul>
-      <a href="/contact" class="cs-button-solid">Ask About Mentorship</a>
+      <a href="#cs-advisor-form-242" class="cs-button-solid">Ask About Mentorship</a>
     </div>
   </div>
 </section>
@@ -222,7 +222,7 @@ eleventyNavigation:
         <p class="cs-cta-p">
           Contact me today to learn more about our mentorship program and how you can turn your passion for travel into a profitable business that provides both income and fulfillment.
         </p>
-        <a href="/contact" class="cs-button-solid">Contact Us Now</a>
+        <a href="#cs-advisor-form-242" class="cs-button-solid">Contact Us Now</a>
       </div>
     </div>
   </div>
@@ -236,4 +236,97 @@ eleventyNavigation:
       item.addEventListener('click', onClick)
     }
   </script>
+</section>
+
+<!-- ============================================ -->
+<!--            Travel Advisor Form              -->
+<!-- ============================================ -->
+
+<section id="cs-advisor-form-242">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Get Started</span>
+      <h2 class="cs-title">Ready to Start Your <span class="cs-color">Travel Advisor Journey?</span></h2>
+      <p class="cs-text">
+        Tell us about your goals and we'll help you build a successful travel business that generates residual income.
+      </p>
+    </div>
+    
+    <form id="cs-form-242" name="Contact Form" method="post" action="/contact">
+      <label class="cs-label">
+        Your Name
+        <input class="cs-input" type="text" id="name" name="name" placeholder="Your full name" required>
+      </label>
+      
+      <label class="cs-label">
+        Email Address
+        <input class="cs-input" type="email" id="email" name="email" placeholder="your.email@example.com" required>
+      </label>
+      
+      <label class="cs-label">
+        Phone Number
+        <input class="cs-input" type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+      </label>
+      
+      <label class="cs-label">
+        Current Experience Level
+        <select class="cs-input" id="experience" name="experience" required>
+          <option value="">Select experience level</option>
+          <option value="beginner">Complete Beginner</option>
+          <option value="some-travel">Some Travel Experience</option>
+          <option value="travel-industry">Travel Industry Background</option>
+          <option value="business-owner">Current Business Owner</option>
+        </select>
+      </label>
+      
+      <label class="cs-label">
+        Time Commitment
+        <select class="cs-input" id="time-commitment" name="time-commitment" required>
+          <option value="">Select time commitment</option>
+          <option value="part-time">Part-time (10-20 hours/week)</option>
+          <option value="full-time">Full-time (40+ hours/week)</option>
+          <option value="flexible">Flexible schedule</option>
+          <option value="weekends">Weekends only</option>
+        </select>
+      </label>
+      
+      <label class="cs-label">
+        Income Goals
+        <select class="cs-input" id="income-goals" name="income-goals" required>
+          <option value="">Select income goals</option>
+          <option value="supplemental">Supplemental Income ($500-2,000/month)</option>
+          <option value="part-time">Part-time Income ($2,000-5,000/month)</option>
+          <option value="full-time">Full-time Income ($5,000-10,000/month)</option>
+          <option value="high-earner">High Earner ($10,000+/month)</option>
+          <option value="discuss">Prefer to discuss</option>
+        </select>
+      </label>
+      
+      <label class="cs-label">
+        Preferred Start Timeline
+        <select class="cs-input" id="start-timeline" name="start-timeline" required>
+          <option value="">When would you like to start?</option>
+          <option value="immediately">Immediately</option>
+          <option value="1-month">Within 1 month</option>
+          <option value="3-months">Within 3 months</option>
+          <option value="6-months">Within 6 months</option>
+          <option value="flexible">Flexible timing</option>
+        </select>
+      </label>
+      
+      <label class="cs-label cs-label-message">
+        Your Travel Background & Interests
+        <textarea class="cs-textarea" id="background" name="background" placeholder="Tell us about your travel experience, favorite destinations, and what draws you to the travel industry..."></textarea>
+      </label>
+      
+      <label class="cs-label cs-label-message">
+        Goals & Questions
+        <textarea class="cs-textarea" id="goals" name="goals" placeholder="What are your goals for becoming a travel advisor? What questions do you have about the mentorship program?"></textarea>
+      </label>
+      
+      <button class="cs-button-solid cs-submit" type="submit">
+        Start My Travel Advisor Journey
+      </button>
+    </form>
+  </div>
 </section>

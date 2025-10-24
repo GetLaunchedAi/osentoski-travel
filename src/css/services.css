@@ -53,6 +53,7 @@
     }
     #banner-1402 .cs-link:last-of-type {
         /* remove the chevron on the last list item */
+        /* No additional styles needed */
     }
     #banner-1402 .cs-link:last-of-type::after {
         display: none;
@@ -976,5 +977,908 @@ hr {
 
 body.dark-mode .cta-text {
     color: #fff !important;
+}
+
+/*-- -------------------------- -->
+<---        School Form          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #cs-school-form-242 {
+        padding: var(--sectionPadding);
+    }
+    #cs-school-form-242 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #cs-school-form-242 .cs-content {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #cs-school-form-242 .cs-topper {
+        font-size: var(--topperFontSize);
+        line-height: 1.2em;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 1rem;
+        display: block;
+    }
+    #cs-school-form-242 .cs-title {
+        font-size: var(--headerFontSize);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: inherit;
+        max-width: 32.625rem;
+        margin: 0 0 1rem 0;
+        color: var(--headerColor);
+        position: relative;
+    }
+    #cs-school-form-242 .cs-text {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        text-align: inherit;
+        width: 100%;
+        max-width: 32.625rem;
+        margin: 0;
+        color: var(--bodyTextColor);
+    }
+    #cs-school-form-242 #cs-form-242 {
+        width: 100%;
+        /* 32px - 40px */
+        margin-bottom: clamp(2rem, 5.3vw, 2.5rem);
+        /* 20px - 40px */
+        padding: clamp(1.25rem, 4.5vw, 2.5rem);
+        box-sizing: border-box;
+        border: 1px solid #dad9e3;
+        border-radius: 1rem;
+        background-color: #f8f9fa;
+    }
+    #cs-school-form-242 .cs-label {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.3vw, 1rem);
+        line-height: 1.5em;
+        font-weight: 700;
+        /* 16px - 20px */
+        margin-bottom: clamp(1rem, 1em, 1.25rem);
+        color: var(--headerColor);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #cs-school-form-242 .cs-label-message {
+        /* 32px - 40px */
+        margin-bottom: clamp(2rem, 4.5vw, 2.5rem);
+    }
+    #cs-school-form-242 .cs-input,
+    #cs-school-form-242 .cs-textarea {
+        font-size: 1rem;
+        width: 100%;
+        height: 4rem;
+        margin-top: 0.25rem;
+        padding-left: 1.25rem;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #b4b2c7;
+        box-sizing: border-box;
+        transition: border 0.3s;
+        background-color: #fff;
+        border-radius: 0.5rem;
+    }
+    #cs-school-form-242 .cs-input:hover,
+    #cs-school-form-242 .cs-textarea:hover {
+        border: 1px solid var(--primary);
+    }
+    #cs-school-form-242 .cs-input:focus,
+    #cs-school-form-242 .cs-textarea:focus {
+        outline: none;
+        border: 1px solid var(--primary);
+        box-shadow: 0 0 0 3px rgba(10, 107, 42, 0.1);
+    }
+    #cs-school-form-242 .cs-input::placeholder,
+    #cs-school-form-242 .cs-textarea::placeholder {
+        color: #7d799c;
+    }
+    #cs-school-form-242 .cs-textarea {
+        font-family: inherit;
+        margin: 0;
+        padding-top: 1.25rem;
+        min-height: 7.5rem;
+    }
+    #cs-school-form-242 .cs-button-solid {
+        font-size: 1rem;
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        color: #fff;
+        min-width: 9.375rem;
+        padding: 0 1.5rem;
+        background-color: var(--primary);
+        border-radius: 0.25rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+    #cs-school-form-242 .cs-button-solid:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #000;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0.25rem;
+        transition: width 0.3s;
+    }
+    #cs-school-form-242 .cs-button-solid:hover:before {
+        width: 100%;
+    }
+    #cs-school-form-242 .cs-submit {
+        width: 100%;
+        border: none;
+        border-radius: 0.5rem;
+    }
+    #cs-school-form-242 .cs-submit:hover {
+        cursor: pointer;
+    }
+}
+
+/* Tablet - 700px */
+@media only screen and (min-width: 43.75rem) {
+    #cs-school-form-242 #cs-form-242 {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    #cs-school-form-242 .cs-label {
+        width: 48%;
+    }
+    #cs-school-form-242 .cs-label-message {
+        width: 100%;
+    }
+    #cs-school-form-242 .cs-button-solid {
+        margin-left: 0;
+    }
+}
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #cs-school-form-242 .cs-container {
+        max-width: 80rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        column-gap: 1.25em;
+        row-gap: 4rem;
+    }
+    #cs-school-form-242 #cs-form-242 {
+        width: 100%;
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+    #cs-school-form-242 .cs-label {
+        width: 48%;
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode #cs-school-form-242 .cs-text,
+    body.dark-mode #cs-school-form-242 .cs-title {
+        color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #cs-school-form-242 #cs-form-242 {
+        background-color: var(--medium);
+        border-color: var(--accent);
+    }
+    /* body.dark-mode #cs-school-form-242 #cs-form-242 label, */
+    body.dark-mode #cs-school-form-242 #cs-form-242 input,
+    body.dark-mode #cs-school-form-242 #cs-form-242 textarea,
+    body.dark-mode #cs-school-form-242 #cs-form-242 select {
+        background-color: var(--dark);
+        color: var(--bodyTextColorWhite);
+        border-color: var(--accent);
+    }
+    body.dark-mode #cs-school-form-242 #cs-form-242 input::placeholder,
+    body.dark-mode #cs-school-form-242 #cs-form-242 textarea::placeholder {
+        filter: brightness(1.9);
+        color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #cs-school-form-242 .cs-label {
+        color: var(--bodyTextColorWhite);
+    }
+}
+
+/*-- -------------------------- -->
+<---        Custom Form          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #cs-custom-form-242 {
+        padding: var(--sectionPadding);
+    }
+    #cs-custom-form-242 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #cs-custom-form-242 .cs-content {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #cs-custom-form-242 .cs-topper {
+        font-size: var(--topperFontSize);
+        line-height: 1.2em;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 1rem;
+        display: block;
+    }
+    #cs-custom-form-242 .cs-title {
+        font-size: var(--headerFontSize);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: inherit;
+        max-width: 32.625rem;
+        margin: 0 0 1rem 0;
+        color: var(--headerColor);
+        position: relative;
+    }
+    #cs-custom-form-242 .cs-text {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        text-align: inherit;
+        width: 100%;
+        max-width: 32.625rem;
+        margin: 0;
+        color: var(--bodyTextColor);
+    }
+    #cs-custom-form-242 #cs-form-242 {
+        width: 100%;
+        margin-bottom: clamp(2rem, 5.3vw, 2.5rem);
+        padding: clamp(1.25rem, 4.5vw, 2.5rem);
+        box-sizing: border-box;
+        border: 1px solid #dad9e3;
+        border-radius: 1rem;
+        background-color: #f8f9fa;
+    }
+    #cs-custom-form-242 .cs-label {
+        font-size: clamp(0.875rem, 1.3vw, 1rem);
+        line-height: 1.5em;
+        font-weight: 700;
+        margin-bottom: clamp(1rem, 1em, 1.25rem);
+        color: var(--headerColor);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #cs-custom-form-242 .cs-label-message {
+        margin-bottom: clamp(2rem, 4.5vw, 2.5rem);
+    }
+    #cs-custom-form-242 .cs-input,
+    #cs-custom-form-242 .cs-textarea {
+        font-size: 1rem;
+        width: 100%;
+        height: 4rem;
+        margin-top: 0.25rem;
+        padding-left: 1.25rem;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #b4b2c7;
+        box-sizing: border-box;
+        transition: border 0.3s;
+        background-color: #fff;
+        border-radius: 0.5rem;
+    }
+    #cs-custom-form-242 .cs-input:hover,
+    #cs-custom-form-242 .cs-textarea:hover {
+        border: 1px solid var(--primary);
+    }
+    #cs-custom-form-242 .cs-input:focus,
+    #cs-custom-form-242 .cs-textarea:focus {
+        outline: none;
+        border: 1px solid var(--primary);
+        box-shadow: 0 0 0 3px rgba(10, 107, 42, 0.1);
+    }
+    #cs-custom-form-242 .cs-input::placeholder,
+    #cs-custom-form-242 .cs-textarea::placeholder {
+        color: #7d799c;
+    }
+    #cs-custom-form-242 .cs-textarea {
+        font-family: inherit;
+        margin: 0;
+        padding-top: 1.25rem;
+        min-height: 7.5rem;
+    }
+    #cs-custom-form-242 .cs-button-solid {
+        font-size: 1rem;
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        color: #fff;
+        min-width: 9.375rem;
+        padding: 0 1.5rem;
+        background-color: var(--primary);
+        border-radius: 0.25rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+    #cs-custom-form-242 .cs-button-solid:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #000;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0.25rem;
+        transition: width 0.3s;
+    }
+    #cs-custom-form-242 .cs-button-solid:hover:before {
+        width: 100%;
+    }
+    #cs-custom-form-242 .cs-submit {
+        width: 100%;
+        border: none;
+        border-radius: 0.5rem;
+    }
+    #cs-custom-form-242 .cs-submit:hover {
+        cursor: pointer;
+    }
+}
+
+/* Tablet - 700px */
+@media only screen and (min-width: 43.75rem) {
+    #cs-custom-form-242 #cs-form-242 {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    #cs-custom-form-242 .cs-label {
+        width: 48%;
+    }
+    #cs-custom-form-242 .cs-label-message {
+        width: 100%;
+    }
+    #cs-custom-form-242 .cs-button-solid {
+        margin-left: 0;
+    }
+}
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #cs-custom-form-242 .cs-container {
+        max-width: 80rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        column-gap: 1.25em;
+        row-gap: 4rem;
+    }
+    #cs-custom-form-242 #cs-form-242 {
+        width: 100%;
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+    #cs-custom-form-242 .cs-label {
+        width: 48%;
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode #cs-custom-form-242 .cs-text,
+    body.dark-mode #cs-custom-form-242 .cs-title {
+        color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #cs-custom-form-242 #cs-form-242 {
+        background-color: var(--medium);
+        border-color: var(--accent);
+    }
+    body.dark-mode #cs-custom-form-242 #cs-form-242 input,
+    body.dark-mode #cs-custom-form-242 #cs-form-242 textarea,
+    body.dark-mode #cs-custom-form-242 #cs-form-242 select {
+        background-color: var(--dark);
+        color: var(--bodyTextColorWhite);
+        border-color: var(--accent);
+    }
+    body.dark-mode #cs-custom-form-242 #cs-form-242 input::placeholder,
+    body.dark-mode #cs-custom-form-242 #cs-form-242 textarea::placeholder {
+        filter: brightness(1.9);
+        color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #cs-custom-form-242 .cs-label {
+        color: var(--bodyTextColorWhite);
+    }
+}
+
+/*-- -------------------------- -->
+<---        Family Form         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #cs-family-form-242 {
+        padding: var(--sectionPadding);
+    }
+    #cs-family-form-242 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #cs-family-form-242 .cs-content {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #cs-family-form-242 .cs-topper {
+        font-size: var(--topperFontSize);
+        line-height: 1.2em;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 1rem;
+        display: block;
+    }
+    #cs-family-form-242 .cs-title {
+        font-size: var(--headerFontSize);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: inherit;
+        max-width: 32.625rem;
+        margin: 0 0 1rem 0;
+        color: var(--headerColor);
+        position: relative;
+    }
+    #cs-family-form-242 .cs-text {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        text-align: inherit;
+        width: 100%;
+        max-width: 32.625rem;
+        margin: 0;
+        color: var(--bodyTextColor);
+    }
+    #cs-family-form-242 #cs-form-242 {
+        width: 100%;
+        margin-bottom: clamp(2rem, 5.3vw, 2.5rem);
+        padding: clamp(1.25rem, 4.5vw, 2.5rem);
+        box-sizing: border-box;
+        border: 1px solid #dad9e3;
+        border-radius: 1rem;
+        background-color: #f8f9fa;
+    }
+    #cs-family-form-242 .cs-label {
+        font-size: clamp(0.875rem, 1.3vw, 1rem);
+        line-height: 1.5em;
+        font-weight: 700;
+        margin-bottom: clamp(1rem, 1em, 1.25rem);
+        color: var(--headerColor);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #cs-family-form-242 .cs-label-message {
+        margin-bottom: clamp(2rem, 4.5vw, 2.5rem);
+    }
+    #cs-family-form-242 .cs-input,
+    #cs-family-form-242 .cs-textarea {
+        font-size: 1rem;
+        width: 100%;
+        height: 4rem;
+        margin-top: 0.25rem;
+        padding-left: 1.25rem;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #b4b2c7;
+        box-sizing: border-box;
+        transition: border 0.3s;
+        background-color: #fff;
+        border-radius: 0.5rem;
+    }
+    #cs-family-form-242 .cs-input:hover,
+    #cs-family-form-242 .cs-textarea:hover {
+        border: 1px solid var(--primary);
+    }
+    #cs-family-form-242 .cs-input:focus,
+    #cs-family-form-242 .cs-textarea:focus {
+        outline: none;
+        border: 1px solid var(--primary);
+        box-shadow: 0 0 0 3px rgba(10, 107, 42, 0.1);
+    }
+    #cs-family-form-242 .cs-input::placeholder,
+    #cs-family-form-242 .cs-textarea::placeholder {
+        color: #7d799c;
+    }
+    #cs-family-form-242 .cs-textarea {
+        font-family: inherit;
+        margin: 0;
+        padding-top: 1.25rem;
+        min-height: 7.5rem;
+    }
+    #cs-family-form-242 .cs-button-solid {
+        font-size: 1rem;
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        color: #fff;
+        min-width: 9.375rem;
+        padding: 0 1.5rem;
+        background-color: var(--primary);
+        border-radius: 0.25rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+    #cs-family-form-242 .cs-button-solid:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #000;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0.25rem;
+        transition: width 0.3s;
+    }
+    #cs-family-form-242 .cs-button-solid:hover:before {
+        width: 100%;
+    }
+    #cs-family-form-242 .cs-submit {
+        width: 100%;
+        border: none;
+        border-radius: 0.5rem;
+    }
+    #cs-family-form-242 .cs-submit:hover {
+        cursor: pointer;
+    }
+}
+
+/* Tablet - 700px */
+@media only screen and (min-width: 43.75rem) {
+    #cs-family-form-242 #cs-form-242 {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    #cs-family-form-242 .cs-label {
+        width: 48%;
+    }
+    #cs-family-form-242 .cs-label-message {
+        width: 100%;
+    }
+    #cs-family-form-242 .cs-button-solid {
+        margin-left: 0;
+    }
+}
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #cs-family-form-242 .cs-container {
+        max-width: 80rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        column-gap: 1.25em;
+        row-gap: 4rem;
+    }
+    #cs-family-form-242 #cs-form-242 {
+        width: 100%;
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+    #cs-family-form-242 .cs-label {
+        width: 48%;
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode #cs-family-form-242 .cs-text,
+    body.dark-mode #cs-family-form-242 .cs-title {
+        color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #cs-family-form-242 #cs-form-242 {
+        background-color: var(--medium);
+        border-color: var(--accent);
+    }
+    body.dark-mode #cs-family-form-242 #cs-form-242 input,
+    body.dark-mode #cs-family-form-242 #cs-form-242 textarea,
+    body.dark-mode #cs-family-form-242 #cs-form-242 select {
+        background-color: var(--dark);
+        color: var(--bodyTextColorWhite);
+        border-color: var(--accent);
+    }
+    body.dark-mode #cs-family-form-242 #cs-form-242 input::placeholder,
+    body.dark-mode #cs-family-form-242 #cs-form-242 textarea::placeholder {
+        filter: brightness(1.9);
+        color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #cs-family-form-242 .cs-label {
+        color: var(--bodyTextColorWhite);
+    }
+}
+
+/*-- -------------------------- -->
+<---        Advisor Form        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #cs-advisor-form-242 {
+        padding: var(--sectionPadding);
+    }
+    #cs-advisor-form-242 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #cs-advisor-form-242 .cs-content {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #cs-advisor-form-242 .cs-topper {
+        font-size: var(--topperFontSize);
+        line-height: 1.2em;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 1rem;
+        display: block;
+    }
+    #cs-advisor-form-242 .cs-title {
+        font-size: var(--headerFontSize);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: inherit;
+        max-width: 32.625rem;
+        margin: 0 0 1rem 0;
+        color: var(--headerColor);
+        position: relative;
+    }
+    #cs-advisor-form-242 .cs-text {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        text-align: inherit;
+        width: 100%;
+        max-width: 32.625rem;
+        margin: 0;
+        color: var(--bodyTextColor);
+    }
+    #cs-advisor-form-242 #cs-form-242 {
+        width: 100%;
+        margin-bottom: clamp(2rem, 5.3vw, 2.5rem);
+        padding: clamp(1.25rem, 4.5vw, 2.5rem);
+        box-sizing: border-box;
+        border: 1px solid #dad9e3;
+        border-radius: 1rem;
+        background-color: #f8f9fa;
+    }
+    #cs-advisor-form-242 .cs-label {
+        font-size: clamp(0.875rem, 1.3vw, 1rem);
+        line-height: 1.5em;
+        font-weight: 700;
+        margin-bottom: clamp(1rem, 1em, 1.25rem);
+        color: var(--headerColor);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #cs-advisor-form-242 .cs-label-message {
+        margin-bottom: clamp(2rem, 4.5vw, 2.5rem);
+    }
+    #cs-advisor-form-242 .cs-input,
+    #cs-advisor-form-242 .cs-textarea {
+        font-size: 1rem;
+        width: 100%;
+        height: 4rem;
+        margin-top: 0.25rem;
+        padding-left: 1.25rem;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #b4b2c7;
+        box-sizing: border-box;
+        transition: border 0.3s;
+        background-color: #fff;
+        border-radius: 0.5rem;
+    }
+    #cs-advisor-form-242 .cs-input:hover,
+    #cs-advisor-form-242 .cs-textarea:hover {
+        border: 1px solid var(--primary);
+    }
+    #cs-advisor-form-242 .cs-input:focus,
+    #cs-advisor-form-242 .cs-textarea:focus {
+        outline: none;
+        border: 1px solid var(--primary);
+        box-shadow: 0 0 0 3px rgba(10, 107, 42, 0.1);
+    }
+    #cs-advisor-form-242 .cs-input::placeholder,
+    #cs-advisor-form-242 .cs-textarea::placeholder {
+        color: #7d799c;
+    }
+    #cs-advisor-form-242 .cs-textarea {
+        font-family: inherit;
+        margin: 0;
+        padding-top: 1.25rem;
+        min-height: 7.5rem;
+    }
+    #cs-advisor-form-242 .cs-button-solid {
+        font-size: 1rem;
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        color: #fff;
+        min-width: 9.375rem;
+        padding: 0 1.5rem;
+        background-color: var(--primary);
+        border-radius: 0.25rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+    #cs-advisor-form-242 .cs-button-solid:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #000;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0.25rem;
+        transition: width 0.3s;
+    }
+    #cs-advisor-form-242 .cs-button-solid:hover:before {
+        width: 100%;
+    }
+    #cs-advisor-form-242 .cs-submit {
+        width: 100%;
+        border: none;
+        border-radius: 0.5rem;
+    }
+    #cs-advisor-form-242 .cs-submit:hover {
+        cursor: pointer;
+    }
+}
+
+/* Tablet - 700px */
+@media only screen and (min-width: 43.75rem) {
+    #cs-advisor-form-242 #cs-form-242 {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    #cs-advisor-form-242 .cs-label {
+        width: 48%;
+    }
+    #cs-advisor-form-242 .cs-label-message {
+        width: 100%;
+    }
+    #cs-advisor-form-242 .cs-button-solid {
+        margin-left: 0;
+    }
+}
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #cs-advisor-form-242 .cs-container {
+        max-width: 80rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        column-gap: 1.25em;
+        row-gap: 4rem;
+    }
+    #cs-advisor-form-242 #cs-form-242 {
+        width: 100%;
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+    #cs-advisor-form-242 .cs-label {
+        width: 48%;
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode #cs-advisor-form-242 .cs-text,
+    body.dark-mode #cs-advisor-form-242 .cs-title {
+        color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #cs-advisor-form-242 #cs-form-242 {
+        background-color: var(--medium);
+        border-color: var(--accent);
+    }
+    body.dark-mode #cs-advisor-form-242 #cs-form-242 input,
+    body.dark-mode #cs-advisor-form-242 #cs-form-242 textarea,
+    body.dark-mode #cs-advisor-form-242 #cs-form-242 select {
+        background-color: var(--dark);
+        color: var(--bodyTextColorWhite);
+        border-color: var(--accent);
+    }
+    body.dark-mode #cs-advisor-form-242 #cs-form-242 input::placeholder,
+    body.dark-mode #cs-advisor-form-242 #cs-form-242 textarea::placeholder {
+        filter: brightness(1.9);
+        color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #cs-advisor-form-242 .cs-label {
+        color: var(--bodyTextColorWhite);
+    }
 }
                                                                

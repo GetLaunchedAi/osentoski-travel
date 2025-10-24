@@ -165,7 +165,7 @@ eleventyNavigation:
           Comprehensive safety planning and support
         </li>
       </ul>
-      <a href="/contact" class="cs-button-solid">Plan a School Trip</a>
+      <a href="#cs-school-form-242" class="cs-button-solid">Plan a School Trip</a>
     </div>
   </div>
 </section>
@@ -222,7 +222,7 @@ eleventyNavigation:
         <p class="cs-cta-p">
           Contact me today to discuss your educational goals, group size, and timeline. I'll create a customized learning adventure that brings your curriculum to life.
         </p>
-        <a href="/contact" class="cs-button-solid">Contact Us Now</a>
+        <a href="#cs-school-form-242" class="cs-button-solid">Contact Us Now</a>
       </div>
     </div>
   </div>
@@ -236,4 +236,106 @@ eleventyNavigation:
       item.addEventListener('click', onClick)
     }
   </script>
+</section>
+
+<!-- ============================================ -->
+<!--                School Trip Form              -->
+<!-- ============================================ -->
+
+<section id="cs-school-form-242">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Get Started</span>
+      <h2 class="cs-title">Ready to Plan Your <span class="cs-color">Educational Adventure?</span></h2>
+      <p class="cs-text">
+        Tell us about your school group trip goals and we'll create a customized educational experience that brings your curriculum to life.
+      </p>
+    </div>
+    
+    <form id="cs-form-242" name="Contact Form" method="post" action="/contact">
+      <label class="cs-label">
+        School/Organization Name
+        <input class="cs-input" type="text" id="school-name" name="school-name" placeholder="Enter your school or organization name" required>
+      </label>
+      
+      <label class="cs-label">
+        Contact Person Name
+        <input class="cs-input" type="text" id="contact-name" name="contact-name" placeholder="Your full name" required>
+      </label>
+      
+      <label class="cs-label">
+        Your Title/Role
+        <input class="cs-input" type="text" id="contact-title" name="contact-title" placeholder="Teacher, Administrator, etc." required>
+      </label>
+      
+      <label class="cs-label">
+        Email Address
+        <input class="cs-input" type="email" id="email" name="email" placeholder="your.email@school.edu" required>
+      </label>
+      
+      <label class="cs-label">
+        Phone Number
+        <input class="cs-input" type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+      </label>
+      
+      <label class="cs-label">
+        Group Size
+        <select class="cs-input" id="group-size" name="group-size" required>
+          <option value="">Select group size</option>
+          <option value="10-20">10-20 students</option>
+          <option value="21-40">21-40 students</option>
+          <option value="41-60">41-60 students</option>
+          <option value="60+">60+ students</option>
+        </select>
+      </label>
+      
+      <label class="cs-label">
+        Grade Level
+        <select class="cs-input" id="grade-level" name="grade-level" required>
+          <option value="">Select grade level</option>
+          <option value="elementary">Elementary School</option>
+          <option value="middle">Middle School</option>
+          <option value="high">High School</option>
+          <option value="college">College/University</option>
+        </select>
+      </label>
+      
+      <label class="cs-label">
+        Preferred Destination/Program
+        <select class="cs-input" id="destination" name="destination" required>
+          <option value="">Select preferred option</option>
+          <option value="disney">Disney Imagination Campus</option>
+          <option value="europe">European History Tours</option>
+          <option value="stem">STEM Programs</option>
+          <option value="custom">Custom Educational Program</option>
+          <option value="other">Other (please specify in message)</option>
+        </select>
+      </label>
+      
+      <label class="cs-label">
+        Preferred Timeline
+        <select class="cs-input" id="timeline" name="timeline" required>
+          <option value="">When would you like to travel?</option>
+          <option value="3-6-months">3-6 months</option>
+          <option value="6-12-months">6-12 months</option>
+          <option value="12-plus-months">12+ months</option>
+          <option value="flexible">Flexible timing</option>
+        </select>
+      </label>
+      
+      <label class="cs-label cs-label-message">
+        Curriculum Focus & Learning Objectives
+        <textarea class="cs-textarea" id="curriculum" name="curriculum" placeholder="Tell us about your curriculum goals, learning objectives, and any specific educational outcomes you hope to achieve through this trip..."></textarea>
+      </label>
+      
+      <label class="cs-label cs-label-message">
+        Additional Requirements & Questions
+        <textarea class="cs-textarea" id="requirements" name="requirements" placeholder="Any special accommodations, dietary restrictions, accessibility needs, or other requirements we should know about?"></textarea>
+      </label>
+      
+      <button class="cs-button-solid cs-submit" type="submit">
+        Request School Trip Consultation
+      </button>
+    </form>
+  </div>
 </section>
