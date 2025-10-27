@@ -20,14 +20,14 @@
     display: inline-block;
     margin: auto;
     width: auto;
-    height: 4em;
+    height: 8rem;
     margin-bottom: 1.875em;
     text-align: center;
   }
 
   #footer .left-section .logo img {
     width: auto;
-    height: 4em;
+    height: 8rem;
     display: block;
   }
 

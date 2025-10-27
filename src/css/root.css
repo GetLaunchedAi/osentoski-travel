@@ -5,10 +5,10 @@
 /* CSS Variables */
 :root {
   /* Primary Colors */
-  --primary: #0a6b2a;       /* dark green */
-  --primaryShade: #1f8f44;  /* brighter shade */
-  --primaryDark: #063a18;   /* deeper dark */
-  --primaryLight: #59c97c;  /* lighter tint */
+  --primary: #0076A8;       /* vivid ocean blue */
+--primaryShade: #26A7D1;  /* lighter sky blue */
+--primaryDark: #00506E;   /* deep sea blue */
+--primaryLight: #7FD2EE;  /* soft aqua tint */
 
   /* Text Colors */
   --bodyTextColor: #4E4B66;
