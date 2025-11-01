@@ -26,15 +26,37 @@
     /* 120px - 465px */
     gap: clamp(7.5rem, 24vw, 29.0625rem);
   }
-  #hero-2042 .cs-content {
-    text-align: center;
+  #hero-2042 .cs-content-wrapper {
     width: 100%;
-    /* changes to 564px on tablet */
-    max-width: 20.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 2rem;
+    pointer-events: auto;
+  }
+  #hero-2042 .cs-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: flex-start; */
+  }
+  #hero-2042 .cs-content.cs-about {
+    max-width: 100%;
+  }
+  #hero-2042 .cs-content.cs-contact {
+    text-align: left;
+    max-width: 100%;
+  }
+  #hero-2042 .cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--bodyTextColorWhite);
+    margin-bottom: 1rem;
+    display: block;
+    opacity: 0.9;
   }
   #hero-2042 .cs-title {
     /* 39px - 61px */
@@ -42,8 +64,11 @@
     color: var(--bodyTextColorWhite);
   }
   #hero-2042 .cs-text {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     color: var(--bodyTextColorWhite);
+  }
+  #hero-2042 .cs-text:last-of-type {
+    margin-bottom: 2rem;
   }
   #hero-2042 .cs-button-group {
     display: flex;
@@ -94,7 +119,7 @@
     content: "";
     width: 0%;
     height: 100%;
-    background: #000;
+    background: var(--accent-orange);
     opacity: 1;
     border-radius: 0.25rem;
     position: absolute;
@@ -153,20 +178,143 @@
     left: 0;
     z-index: 1;
   }
+
+  /* Contact Info Styles */
+  #hero-2042 .cs-contact-info {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #hero-2042 .cs-contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  #hero-2042 .cs-contact-label {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--bodyTextColorWhite);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.8;
+  }
+  #hero-2042 .cs-contact-link {
+    font-size: 1rem;
+    color: var(--bodyTextColorWhite);
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.3s;
+  }
+  #hero-2042 .cs-contact-link:hover {
+    opacity: 0.8;
+  }
+
+  /* Hero Form Styles */
+  #hero-2042 .cs-hero-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  #hero-2042 .cs-hero-form .cs-label {
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    font-weight: 700;
+    color: var(--bodyTextColorWhite);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  #hero-2042 .cs-hero-form .cs-input,
+  #hero-2042 .cs-hero-form .cs-textarea {
+    font-size: 1rem;
+    width: 100%;
+    padding: 0.875rem 1rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    color: var(--bodyTextColor);
+    transition: border 0.3s, background-color 0.3s, box-shadow 0.3s;
+  }
+  #hero-2042 .cs-hero-form .cs-input:hover,
+  #hero-2042 .cs-hero-form .cs-textarea:hover {
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+  #hero-2042 .cs-hero-form .cs-input:focus,
+  #hero-2042 .cs-hero-form .cs-textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+  }
+  #hero-2042 .cs-hero-form .cs-input::placeholder,
+  #hero-2042 .cs-hero-form .cs-textarea::placeholder {
+    color: #7d799c;
+  }
+  #hero-2042 .cs-hero-form .cs-textarea {
+    font-family: inherit;
+    min-height: 7rem;
+    resize: vertical;
+  }
+  #hero-2042 .cs-hero-form .cs-submit {
+    margin-top: 0.25rem;
+    width: 100%;
+  }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
+  #hero-2042 {
+    padding: clamp(12.5rem, 25.95vw, 18.75em) 1rem;
+  }
   #hero-2042 .cs-container {
-    padding-right: 6.25rem;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  #hero-2042 .cs-content-wrapper {
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+    max-width: 100%;
   }
   #hero-2042 .cs-content {
     text-align: left;
-    max-width: 35.25rem;
     align-items: flex-start;
+    flex: 1;
+  }
+  #hero-2042 .cs-content.cs-about {
+    max-width: 35.25rem;
+  }
+  #hero-2042 .cs-content.cs-contact {
+    max-width: 35rem;
+    /* flex: 0 1 auto; */
+  }
+  #hero-2042 .cs-contact-info {
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  #hero-2042 .cs-hero-form .cs-label {
+    width: 100%;
   }
   #hero-2042 .cs-video-wrapper::before {
     background: linear-gradient(270deg, rgba(0, 0, 0, 0) 51.02%, rgba(0, 0, 0, 0.64) 75.13%), linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #hero-2042 .cs-content-wrapper {
+    gap: 4rem;
+  }
+  #hero-2042 .cs-content.cs-about {
+    max-width: 40rem;
+  }
+  #hero-2042 .cs-content.cs-contact {
+    max-width: 38rem;
   }
 }

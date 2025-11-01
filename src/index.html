@@ -1,14 +1,15 @@
 ---
 layout: 'base.html'
-description: 'Osentoski Travel plans beyond the classroom school trips, family adventures, and custom adventures. We also mentor aspiring travel advisors to book travel and earn commissions.'
+description: 'Osentoski Travel plans beyond the classroom school trips, family adventures, and custom adventures. We
+also mentor aspiring travel advisors to book travel and earn commissions.'
 metaTitle: 'Osentoski Travel | Beyond the Classroom School Trips, Family Adventures, and Travel Advisor Mentorship'
 tagTitle: 'Plan Unforgettable Beyond the Classroom School Trips & Family Adventures'
 preloadImg: '/images/landing.png'
 preloadCSS: '/css/local.css'
 permalink: '/'
 eleventyNavigation:
-  key: Home
-  order: 100
+key: Home
+order: 100
 ---
 <!-- ============================================ -->
 <!--                    Hero                      -->
@@ -16,22 +17,62 @@ eleventyNavigation:
 
 <section id="hero-2042">
   <div class="cs-container">
-    <div class="cs-content fx fade-in">
-      <span class="cs-topper">Osentoski Travel</span>
-      <h1 class="cs-title">Plan Beyond the Classroom School Trips, Family Adventures, and Adventures with Ease</h1>
-      <p class="cs-text">
-        From Disney Imagination Campus workshops to hands-on European history tours, we craft educational and inspiring
-        group travel — plus unforgettable family getaways. I also mentor new travel advisors to travel and earn.
-      </p>
-      <div class="cs-button-group">
-        <a href="/services/" class="cs-button-solid">Explore Services</a>
+    <div class="cs-content-wrapper fx fade-in">
+      <!-- Left Column: About Us -->
+      <div class="cs-content cs-about">
+        <span class="cs-topper">About</span>
+        <h1 class="cs-title">Travel That Brings Learning to Life</h1>
+        <p class="cs-text">
+          I'm Samantha — a mom, wife, and dog lover with a lifelong travel bug. Coming from a military family and after
+          years in the classroom, I decided to turn my passion into a full-time career helping others explore the world.
+        </p>
+        <p class="cs-text">
+          Through Osentoski Travel, I combine my background in education with expert planning to create meaningful,
+          learning-rich experiences for school groups and unforgettable adventures for families.
+        </p>
+      </div>
+
+      <!-- Right Column: Contact -->
+      <div class="cs-content cs-contact">
+        <div class="cs-contact-info">
+          <div class="cs-contact-item">
+            <span class="cs-contact-label">Phone</span>
+            <a href="tel:9899750204" class="cs-contact-link">(989) 975-0204</a>
+          </div>
+          <div class="cs-contact-item">
+            <span class="cs-contact-label">Email</span>
+            <a href="mailto:sam@osentoskitravel.com" class="cs-contact-link">sam@osentoskitravel.com</a>
+          </div>
+        </div>
+
+        <form id="cs-hero-form" class="cs-hero-form" name="Contact Form" method="post"
+          action="https://submit-form.com/6RVurfodN">
+          <label class="cs-label">
+            Name
+            <input class="cs-input" required type="text" id="name-hero" name="name" placeholder="John/Jane Doe">
+          </label>
+          <label class="cs-label">
+            Email
+            <input class="cs-input" required type="email" id="email-hero" name="email" placeholder="name@company.com">
+          </label>
+          <label class="cs-label">
+            Phone
+            <input class="cs-input" type="tel" id="phone-hero" name="phone" placeholder="+1 (248) 721-6136">
+          </label>
+          <label class="cs-label cs-label-message">
+            Message
+            <textarea class="cs-input cs-textarea" required name="Message" id="message-hero"
+              placeholder="Hello, I'm interested in..."></textarea>
+          </label>
+          <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+        </form>
       </div>
     </div>
   </div>
 
   <div class="cs-video-wrapper">
-    <img loading="lazy" decoding="async" src="/images/hero_img.jpeg" alt="professional carpet cleaning service"
-      width="2098" height="1118" class="cs-picture">
+    <img loading="lazy" decoding="async" src="/images/hero_img.jpeg" alt="travel planning background" width="2098"
+      height="1118" class="cs-picture">
   </div>
 
 </section>
@@ -47,69 +88,42 @@ eleventyNavigation:
         <span class="cs-topper">Our Services</span>
         <h2 class="cs-title">Travel Planning Made Simple</h2>
       </div>
-      <p class="cs-text">
-        I plan school group trips, family vacations, and custom adventures that bring people closer together through shared experiences. Easy, safe, and budget-conscious planning — every step handled for you.
-      </p>
     </div>
     <ul class="cs-card-group">
       <li class="cs-item fx slide-top staggered-m" style="--i:1">
-        <a href="/school-groups/" class="cs-link">
+        <a href="/contact/#cs-contact-242" class="cs-link">
           <span class="cs-number">01</span>
-          <h3 class="cs-h3">Beyond the Classroom School Trip</h3>
-          <p class="cs-item-text">
-            Disney Imagination Campus, STEM and arts workshops, and European history tours made easy.
-          </p>
-        </a>
-        <picture class="cs-picture">
-          <source media="(max-width: 600px)" srcset="/images/service_1.png">
-          <source media="(min-width: 601px)" srcset="/images/service_1.png">
-          <img decoding="async" src="/images/service_1.png" alt="carpet cleaning service" width="413" height="374"
-            aria-hidden="true">
-        </picture>
-      </li>
-      <li class="cs-item fx slide-top staggered-m" style="--i:2">
-        <a href="/family-vacations/" class="cs-link">
-          <span class="cs-number">02</span>
-          <h3 class="cs-h3">Family Adventures</h3>
-          <p class="cs-item-text">
-            Stress-free itineraries for families — make lifelong memories without the hassle.
-          </p>
+          <h3 class="cs-h3">Book a Family Adventure</h3>
         </a>
         <picture class="cs-picture">
           <source media="(max-width: 600px)" srcset="/images/service_2.png">
           <source media="(min-width: 601px)" srcset="/images/service_2.png">
-          <img decoding="async" src="/images/service_2.png" alt="furniture cleaning service" width="413" height="374"
+          <img decoding="async" src="/images/service_2.png" alt="family adventure booking" width="413" height="374"
+            aria-hidden="true">
+        </picture>
+      </li>
+      <li class="cs-item fx slide-top staggered-m" style="--i:2">
+        <a href="/contact/#cs-contact-242" class="cs-link">
+          <span class="cs-number">02</span>
+          <h3 class="cs-h3">Book a School Trip</h3>
+        </a>
+        <picture class="cs-picture">
+          <source media="(max-width: 600px)" srcset="/images/service_1.png">
+          <source media="(min-width: 601px)" srcset="/images/service_1.png">
+          <img decoding="async" src="/images/service_1.png" alt="school trip booking" width="413" height="374"
             aria-hidden="true">
         </picture>
       </li>
       <li class="cs-item fx slide-top staggered-m" style="--i:3">
-        <a href="/become-a-travel-advisor/" class="cs-link">
+        <a href="/contact/#cs-contact-242" class="cs-link">
           <span class="cs-number">03</span>
-          <h3 class="cs-h3">Want to Become a Travel Advisor</h3>
-          <p class="cs-item-text">
-            Learn to book travel, earn commissions, and build residual income doing what you love.
-          </p>
-        </a>
-        <picture class="cs-picture">
-          <source media="(max-width: 600px)" srcset="/images/service_3.png">
-          <source media="(min-width: 601px)" srcset="/images/service_3.png">
-          <img decoding="async" src="/images/service_3.png" alt="tile and grout cleaning service" width="413"
-            height="374" aria-hidden="true">
-        </picture>
-      </li>
-      <li class="cs-item fx slide-top staggered-m" style="--i:4">
-        <a href="/custom-adventures/" class="cs-link">
-          <span class="cs-number">04</span>
-          <h3 class="cs-h3">Custom Adventures</h3>
-          <p class="cs-item-text">
-            Unique trips crafted around your goals — milestone celebrations, multi-generational travel, or once-in-a-lifetime adventures.
-          </p>
+          <h3 class="cs-h3">Book a Custom Adventure</h3>
         </a>
         <picture class="cs-picture">
           <source media="(max-width: 600px)" srcset="/images/service_4.png">
           <source media="(min-width: 601px)" srcset="/images/service_4.png">
-          <img decoding="async" src="/images/service_4.png" alt="custom adventure planning service" width="413"
-            height="374" aria-hidden="true">
+          <img decoding="async" src="/images/service_4.png" alt="custom adventure booking" width="413" height="374"
+            aria-hidden="true">
         </picture>
       </li>
     </ul>
@@ -117,35 +131,55 @@ eleventyNavigation:
 </section>
 
 <!-- ============================================ -->
-<!--                 About Us                     -->
+<!--              Vertical Gallery                -->
 <!-- ============================================ -->
 
-<section id="sbs-1206">
+<section id="vertical-gallery-2042">
   <div class="cs-container">
-    <div class="cs-image-group">
-      <picture class="cs-picture fx slide-left">
-        <img loading="lazy" decoding="async" src="/images/about_img_0.jpeg" alt="family-owned carpet cleaning team">
-      </picture>
+    <div class="cs-content">
+      <span class="cs-topper">Travel Gallery</span>
+      <h2 class="cs-title">Memorable Adventures Around the World</h2>
+      <!-- <p class="cs-text">
+        Explore moments from our travelers' journeys — each image tells a story of discovery, learning, and unforgettable experiences.
+      </p> -->
     </div>
-    <div class="cs-content fx slide-right">
-      <span class="cs-topper">About</span>
-      <h2 class="cs-title">Travel That Teaches, Inspires, and Brings Families Together</h2>
-      <h3 class="cs-h3">From a military family and classroom to full-time travel planning.</h3>
-      <p class="cs-text">
-        I’m Samantha — a mom, wife, and educator-turned-travel-advisor. Coming from a military family, I’ve always had a
-        deep appreciation for exploring new places. I combine my education background with travel expertise to design
-        meaningful, learning-rich school trips and unforgettable family vacations.
-      </p>
-      <div class="cs-content-flair">
-        <ul class="cs-ul">
-          <li class="cs-li">Beyond the Classroom School Trip</li>
-          <li class="cs-li">Family Adventures</li>
-          <li class="cs-li">Custom Adventures</li>
-          <li class="cs-li">Want to Become a Travel Advisor</li>
-          <li class="cs-li">Easy, safe, and budget-conscious planning</li>
-        </ul>
+    <div class="cs-gallery">
+      <div class="cs-gallery-item fx fade-in">
+        <picture class="cs-picture">
+          <img loading="lazy" decoding="async" src="/images/portfolio/image_1.jpeg" alt="Travel adventure destination" width="800" height="600">
+        </picture>
+        <p class="cs-subtitle">Enjoying a Scenic Boat Ride</p>
       </div>
-      <a class="cs-button-solid" href="/about">Learn More</a>
+      <div class="cs-gallery-item fx fade-in">
+        <picture class="cs-picture">
+          <img loading="lazy" decoding="async" src="/images/portfolio/image_2.jpeg" alt="Travel adventure destination" width="800" height="600">
+        </picture>
+        <p class="cs-subtitle">Family Fun and Adventure</p>
+      </div>
+      <div class="cs-gallery-item fx fade-in">
+        <picture class="cs-picture">
+          <img loading="lazy" decoding="async" src="/images/portfolio/image_3.jpeg" alt="Travel adventure destination" width="800" height="600">
+        </picture>
+        <p class="cs-subtitle">Family Bike Adventure</p>
+      </div>
+      <div class="cs-gallery-item fx fade-in">
+        <picture class="cs-picture">
+          <img loading="lazy" decoding="async" src="/images/portfolio/image_4.jpeg" alt="Travel adventure destination" width="800" height="600">
+        </picture>
+        <p class="cs-subtitle">Sunset Reflections by the Lake</p>
+      </div>
+      <div class="cs-gallery-item fx fade-in">
+        <picture class="cs-picture">
+          <img loading="lazy" decoding="async" src="/images/portfolio/image_5.jpeg" alt="Travel adventure destination" width="800" height="600">
+        </picture>
+        <p class="cs-subtitle">Family Adventure on the Trail</p>
+      </div>
+      <div class="cs-gallery-item fx fade-in">
+        <picture class="cs-picture">
+          <img loading="lazy" decoding="async" src="/images/portfolio/image_6.jpeg" alt="Travel adventure destination" width="800" height="600">
+        </picture>
+        <p class="cs-subtitle">Exploring European Castles</p>
+      </div>  
     </div>
   </div>
 </section>
@@ -161,9 +195,11 @@ eleventyNavigation:
         <span class="cs-topper">Featured Adventures</span>
         <h2 class="cs-title">Handpicked Experiences That Inspire</h2>
       </div>
-      <p class="cs-text">
-        Discover our most popular and transformative travel experiences. From educational school trips to unforgettable family adventures, these featured journeys showcase the magic of travel that teaches, connects, and creates lasting memories.
-      </p>
+      <!-- <p class="cs-text">
+        Discover our most popular and transformative travel experiences. From educational school trips to unforgettable
+        family adventures, these featured journeys showcase the magic of travel that teaches, connects, and creates
+        lasting memories.
+      </p> -->
     </div>
     <ul class="cs-card-group">
       <li class="cs-item fx slide-top staggered-m" style="--i:1">
@@ -171,14 +207,15 @@ eleventyNavigation:
           <span class="cs-number">01</span>
           <h3 class="cs-h3">Disney Imagination Campus</h3>
           <p class="cs-item-text">
-            STEM and arts workshops at Disney World that bring classroom learning to life through hands-on experiences and creative problem-solving.
+            STEM and arts workshops at Disney World that bring classroom learning to life through hands-on experiences
+            and creative problem-solving.
           </p>
         </a>
         <picture class="cs-picture">
           <source media="(max-width: 600px)" srcset="/images/featured_1.png">
           <source media="(min-width: 601px)" srcset="/images/featured_1.png">
-          <img decoding="async" src="/images/featured_1.png" alt="Disney Imagination Campus educational experience" width="413" height="374"
-            aria-hidden="true">
+          <img decoding="async" src="/images/featured_1.png" alt="Disney Imagination Campus educational experience"
+            width="413" height="374" aria-hidden="true">
         </picture>
       </li>
       <li class="cs-item fx slide-top staggered-m" style="--i:2">
@@ -186,14 +223,15 @@ eleventyNavigation:
           <span class="cs-number">02</span>
           <h3 class="cs-h3">European History Tours</h3>
           <p class="cs-item-text">
-            Walk through living history with guided tours of ancient Rome, medieval castles, and World War II sites that make history come alive.
+            Walk through living history with guided tours of ancient Rome, medieval castles, and World War II sites that
+            make history come alive.
           </p>
         </a>
         <picture class="cs-picture">
           <source media="(max-width: 600px)" srcset="/images/featured_2.png">
           <source media="(min-width: 601px)" srcset="/images/featured_2.png">
-          <img decoding="async" src="/images/featured_2.png" alt="European history tour experience" width="413" height="374"
-            aria-hidden="true">
+          <img decoding="async" src="/images/featured_2.png" alt="European history tour experience" width="413"
+            height="374" aria-hidden="true">
         </picture>
       </li>
       <li class="cs-item fx slide-top staggered-m" style="--i:3">
@@ -201,7 +239,8 @@ eleventyNavigation:
           <span class="cs-number">03</span>
           <h3 class="cs-h3">Multi-Generational Family Adventures</h3>
           <p class="cs-item-text">
-            Custom-designed trips that bring grandparents, parents, and children together for meaningful shared experiences and lasting family bonds.
+            Custom-designed trips that bring grandparents, parents, and children together for meaningful shared
+            experiences and lasting family bonds.
           </p>
         </a>
         <picture class="cs-picture">
@@ -216,7 +255,8 @@ eleventyNavigation:
           <span class="cs-number">04</span>
           <h3 class="cs-h3">Milestone Celebration Trips</h3>
           <p class="cs-item-text">
-            Once-in-a-lifetime adventures crafted around graduations, anniversaries, and special moments that deserve extraordinary celebration.
+            Once-in-a-lifetime adventures crafted around graduations, anniversaries, and special moments that deserve
+            extraordinary celebration.
           </p>
         </a>
         <picture class="cs-picture">
